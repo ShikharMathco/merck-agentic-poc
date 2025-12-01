@@ -1,0 +1,144 @@
+Table Name,Table Description,Column Name,Column Description
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,brand_pk,Primary key identifier for the record
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,source_id,Identifier for the source system of the data
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,gmc_brand_code,Code representing the brand in the GMC system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,source_brand_code,Brand code from the source system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,gmc_brand_name,Name of the brand in the GMC system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,source_brand_name,Name of the brand in the source system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,gmc_subbrand_code,Code representing the sub-brand in the GMC system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,gmc_subbrand_name,Name of the sub-brand in the GMC system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,manufacturer,Name of the manufacturer associated with the brand or sub-brand
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,inserted_by,User or system that inserted the record
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,updated_by,User or system that last updated the record
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,load_ts,Timestamp when the record was loaded into the system
+vw_glbl_bp_dim_brand,This view points the Brand Dimension Table,update_ts,Timestamp when the record was last updated
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,category_pk,Primary key identifier for the record
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_id,Identifier for the source system of the data
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_category_code,Code representing the category in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_category_code,Category code from the source system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_subcategory_code,Code representing the subcategory in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_subcategory_code,Subcategory code from the source system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_category_name,Name of the category in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_category_name,Name of the category in the source system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_subcategory_name,Name of the subcategory in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_subcategory_name,Name of the subcategory in the source system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_need_state_code,Code representing the need state in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_need_state_code,Need state code from the source system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_need_state,Description of the need state in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,source_need_state,Description of the need state from the source system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,gmc_business_unit,Business unit associated with the category or subcategory in the GMC system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,inserted_by,User or system that inserted the record
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,updated_by,User or system that last updated the record
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,load_ts,Timestamp when the record was loaded into the system
+vw_glbl_bp_dim_category,This view points the Category Dimension Table,update_ts,Timestamp when the record was last updated
+vw_glbl_bp_dim_date,Dim Date View,date,Specific date of the record
+vw_glbl_bp_dim_date,Dim Date View,weekendingdate,The ending date of the week
+vw_glbl_bp_dim_date,Dim Date View,year445,Fiscal year following the 4-4-5 calendar format
+vw_glbl_bp_dim_date,Dim Date View,month445,Fiscal month in the 4-4-5 calendar format
+vw_glbl_bp_dim_date,Dim Date View,month445number,Numerical representation of the fiscal month (4-4-5 format)
+vw_glbl_bp_dim_date,Dim Date View,monthyearnum,Numeric representation of month and year combined
+vw_glbl_bp_dim_date,Dim Date View,year,Calendar year of the record
+vw_glbl_bp_dim_date,Dim Date View,monthyear,Combination of month and year
+vw_glbl_bp_dim_date,Dim Date View,monthnumber,Numeric representation of the month (1-12)
+vw_glbl_bp_dim_date,Dim Date View,month,Name of the month
+vw_glbl_bp_dim_date,Dim Date View,weeknumber,Week number in the calendar year
+vw_glbl_bp_dim_date,Dim Date View,weeknumber445,Week number in the 4-4-5 fiscal calendar
+vw_glbl_bp_dim_date,Dim Date View,quateryear,Year and quarter combine
+vw_glbl_bp_dim_date,Dim Date View,quaternumber,Numeric representation of the quarter (1-4)
+vw_glbl_bp_dim_date,Dim Date View,quater,Quarter of the year
+vw_glbl_bp_dim_date,Dim Date View,quater445,Fiscal quarter following the 4-4-5 calendar format
+vw_glbl_bp_dim_date,Dim Date View,quater445number,Numeric representation of the fiscal quarter (4-4-5 format)
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,primary_key,Primary key identifier for the record
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,source_id,Identifier for the source system of the data
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,ag_code,Account geography code representing the geographical region
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,brand_pk,Primary key identifier for the brand
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,category_pk,Primary key identifier for the category
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,retailer_pk,Primary key identifier for the retailer
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,item_pk,Primary key identifier for the item
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,wk_end_dt,Week end date for the sales or transaction data and the primary key identifier for date dim table
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,acct_nm,Retailer Name
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,jnj_item_no,Item Number associated with each transaction
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,sales_type,Type of sales transaction
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,channel_name,"Name of the sales channel (e.g., online, in-store)"
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,pos_dol_amt,Point of Sale (POS) dollar amount for the transaction in local currency
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,global_pos_dol_amt,Global Point of Sale (POS) dollar amount for the transaction in USD
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,pos_unit_qty,Quantity of items sold at the Point of Sale (POS)
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,concierge_pos_dol_amt,Concierge Point of Sale (POS) dollar amount for the transaction in local currency
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,global_concierge_pos_dol_amt,Global Concierge POS dollar amount for the transaction in USD
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,concierge_pos_unit_qty,Quantity of items sold at Concierge POS
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,dc_on_hand_qty,Distribution Center (DC) on-hand quantity of the item
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,store_on_hand_qty,Store on-hand quantity of the item
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,current_list_prc_amt_cu,Current list price in the currency unit for the item in local currency
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,global_current_list_prc_amt_cu,Global current list price in the currency unit for the item in USD
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,load_time,Timestamp when the data was loaded into the system
+vw_glbl_bp_fct_pos,Retail store sales data. No competitor data.,load_script_path,File path of the script used to load the data
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,retailer_pk,Primary key identifier for the record
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,source_id,Identifier for the source system of the data
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_retailer_code,Code representing the retailer in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,source_retailer_code,Retailer code from the source system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_retailer_name,Name of the retailer in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,source_retailer_name,Name of the retailer in the source system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_channel_l1_code,Code representing the first level of the retail channel in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_channel_l1_name,Name of the first level of the retail channel in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_channel_l2_code,Code representing the second level of the retail channel in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_channel_l2_name,Name of the second level of the retail channel in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_customer_inc_code,Code representing the customer inc group in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,gcc_customer_inc_name,Name of the customer inc group in the GCC system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,go_to_market,Go to Market Details
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,source_retail_environment,Description of the retail environment in the source system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,inserted_by,User or system that inserted the record
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,updated_by,User or system that last updated the record
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,load_ts,Timestamp when the record was loaded into the system
+vw_glbl_bp_dim_retailer,This view points the Retailer Dimension Table,update_ts,Timestamp when the record was last updated
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,primary_key,Primary key identifier for the record
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,source_id,Identifier for the source system from which the data originated
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,ag_code,Account geography code representing the geographical region
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,brand_pk,Primary key identifier for the brand associated with the item
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,category_pk,Primary key identifier for the category of the item
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,retailer_pk,Primary key identifier for the retailer
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,item_pk,Primary key identifier for the item
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,wk_end_dt,Week end date for the sales or transaction data
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,re_no,Retailer number or code representing the retailer
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,re_nm,Name of the retailer
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,cust_no,Customer number identifying the customer
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,kc_no,Key customer number associated with the transaction
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,kc_nm,Name of the key customer
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,itm_no,Item number representing the product
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,channel_name,"Name of the sales or distribution channel (e.g., online, in-store)"
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,wholesaler_name,Name of the wholesaler involved in the transaction
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,customer_type,Type of customer
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,grs_ship_am,Gross shipment amount for the transaction in local currency
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,global_grs_ship_am,Global gross shipment amount for the transaction in USD
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,grs_ship_qt_each,Gross shipment quantity in individual units (each) for the transaction
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,grs_ship_qt_cu,Gross shipment quantity in cubic units for the transaction
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,grs_ship_qt_case,Gross shipment quantity in cases for the transaction
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,load_time,Timestamp when the data was loaded into the system
+vw_glbl_bp_fct_shipment,Shipment info from Kenvue to distributors/retailers. No competitor data.,load_script_path,File path of the script used to load the data
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",primary_key,Primary key identifier for the record
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",source_id,Identifier for the source system from which the data originated
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",ag_code,Account geography code representing the geographical region
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",brand_pk,Primary key identifier for the brand associated with the item
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",category_pk,Primary key identifier for the category of the item
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",retailer_pk,Primary key identifier for the retailer
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",item_pk,Primary key identifier for the item
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",utag,Unique tag associated with the item
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",dollars,Dollar amount representing the total value of the sales or transaction in local currency
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",global_dollars,Global dollar amount for the transaction in US
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",units,Number of units sold or associated with the transaction
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",tdp,Total discount price
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",base_dollars,Base dollar amount  in local currency
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",global_base_dollars,Global base dollar amount in US
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",base_units,Number of units at base price sold or associated with the transaction
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",any_promo_units,Number of units sold with any promotional discount applied
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",any_promo_dollars,Total dollar amount for units sold with promotional discounts in local currency
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",global_any_promo_dollars,Global total dollar amount for units sold with promotional discounts in US
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",time_period,"Time period for the sales or transaction data (e.g., week, month, quarter)"
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",period,"Specific period identifier for the sales or transaction data (e.g., fiscal month, quarter)"
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",date_type,"Type of date used in the data (e.g., transaction date, order date)"
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",retailer_name,Name of the retailer involved in the transaction
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",manufacturer,Name of the manufacturer of the product
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",supplier,Name of the supplier of the product
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",channel_type,"Type of sales or distribution channel (e.g., online, in-store, wholesale)"
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",sales_type,"Type of sales transaction (e.g., retail, wholesale, direct-to-consumer)"
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",load_time,Timestamp when the data was loaded into the system
+vw_glbl_bp_fct_syndicated,"Sales & other metrics for the full Canadian market, includes Kenvue & competitors.",load_script_path,File path of the script used to load the data
