@@ -1,15 +1,23 @@
-from fastapi.logger import logger
 from text2sql.pipeline.util import extract_json
 from text2sql.prompts.generate_sql_prompt import sql_generation_prompt
-async def generate_sql_query(
-    llm: AzureChatOpenAI,
+from typing import Tuple
+from text2sql.llm_gptel import GPTELChatLLM
+
+async def generate_sql_query_gptel(
+    gptel: GPTELChatLLM,
     user_query: str,
     dialect: str,
     database_schema: str,
     context_info: str,
     app_context: str = "",
     num_candidates: int = 1
-) -> tuple[str, int, int]:
+) -> Tuple[str, int, int]:
+    """
+    Generate SQL query using GPTEL interface.
+
+    Returns:
+        Tuple containing (sql_query, input_tokens, output_tokens)
+    """
     try:
         PROMPT = sql_generation_prompt.format(
             dialect=dialect,
@@ -18,17 +26,24 @@ async def generate_sql_query(
             app_context=f"Important Information (to be considered irrespective on the user question):\n{app_context}" if app_context else "",
             kpi_docs=context_info,
         )
-        response = await llm.ainvoke(PROMPT)
+
+        # GPTEL async call
+        response = await gptel.ainvoke(PROMPT)  # assuming GPTEL has async `ainvoke`
+        
+        # Extract JSON from response
         response_json = extract_json(response.content)
         sql_query = response_json.get("SQL", response_json.get("sql", response_json.get("sql_query", "")))
+        
+        # Cleanup SQL formatting
         if "```sql" in sql_query:
             sql_query = sql_query.replace("```sql", "").replace("```", "")
         sql_query = sql_query.replace("\n", " ").replace("\\", "").replace("%","%%").strip()
+        
         return (
             sql_query, 
             response.usage_metadata.get("input_tokens", 0), 
             response.usage_metadata.get("output_tokens", 0)
         )
     except Exception as e:
-        logger.info(f"Error Generating SQL Candidates: {e}")
+        logger.info(f"Error Generating SQL Candidates with GPTEL: {e}")
         return ("", 0, 0)
