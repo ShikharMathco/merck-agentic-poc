@@ -1,6 +1,5 @@
 from fastapi.logger import logger
 from text2sql.pipeline.util import extract_json
-from langchain_openai import AzureChatOpenAI
 from text2sql.prompts.generate_sql_prompt import sql_generation_prompt
 async def generate_sql_query(
     llm: AzureChatOpenAI,

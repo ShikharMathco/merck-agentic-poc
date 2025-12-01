@@ -1,5 +1,4 @@
 from fastapi.logger import logger
-from langchain_openai import AzureChatOpenAI
 from agents.text2sql.pipeline.util import extract_list
 from agents.text2sql.prompts.keyword_extraction_prompt import keyword_extraction_prompt
 

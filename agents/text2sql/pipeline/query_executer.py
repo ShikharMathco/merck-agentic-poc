@@ -1,5 +1,4 @@
 import logging
-from langchain_openai import AzureChatOpenAI
 import pandas as pd
 from sqlalchemy import create_engine, text
 from agents.text2sql.pipeline.util import extract_json

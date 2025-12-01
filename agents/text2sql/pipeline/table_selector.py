@@ -1,6 +1,5 @@
 from fastapi.logger import logger
 from agents.text2sql.pipeline.util import extract_json
-from langchain_openai import AzureChatOpenAI
 from agents.text2sql.prompts.table_selection_prompt import table_selection_prompt 
 
 async def select_tables(llm: AzureChatOpenAI, user_query: str, database_schema: str, kpi_doc: str) -> tuple[list, int, int]:

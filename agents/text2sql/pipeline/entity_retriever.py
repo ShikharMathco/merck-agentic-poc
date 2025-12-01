@@ -6,9 +6,7 @@ import difflib
 import concurrent.futures
 import logging
 from typing import List, Dict, Tuple, Optional, Any
-from langchain_openai import AzureOpenAIEmbeddings
 from datasketch import MinHash, MinHashLSH
-import os
 import warnings
 warnings.filterwarnings(action="ignore")
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', force = True)
