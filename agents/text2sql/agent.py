@@ -6,19 +6,26 @@ from text2sql.pipeline.column_selector import select_columns
 from text2sql.pipeline.query_generator import generate_sql_query
 from text2sql.pipeline.query_executer import execute_and_fix_query
 
+# from langchain_openai import AzureChatOpenAI
 from text2sql.utils.schema_loader import load_schema
-from langchain_openai import AzureChatOpenAI
+from text2sql.llm_gptel import GPTELChatLLM  # custom GPTEL wrapper
 
 # ----------------------------------------
 # CONFIG
 # ----------------------------------------
 
-AZURE_ENDPOINT = "<input endpoint>"
-AZURE_API_KEY = "<input key>"
-MODEL = "gpt-4o-mini"
+# AZURE_ENDPOINT = "<input endpoint>"
+# AZURE_API_KEY = "<input key>"
+# MODEL = "gpt-4o-mini"
 
-DB_CONNECTION_STRING = "postgresql://user:pass@localhost:5432/mydb"
-SCHEMA_FILE = "schema.json"  # your preprocessed schema
+# DB_CONNECTION_STRING = "postgresql://user:pass@localhost:5432/mydb"
+# SCHEMA_FILE = "schema.json"  # your preprocessed schema
+
+GPTEL_KEY = "<your company key>"
+GPTEL_ENDPOINT = "<your company endpoint>"
+
+DB_CONNECTION_STRING = "postgresql://your_user:your_pass@localhost:5432/dummy_poc"
+SCHEMA_FILE = "schema.json"
 
 # ----------------------------------------
 # Local Runner
@@ -26,12 +33,11 @@ SCHEMA_FILE = "schema.json"  # your preprocessed schema
 
 async def run_text2sql(user_query: str):
 
-    print("\n Loading LLM")
-    llm = AzureChatOpenAI(
-        azure_deployment=MODEL,
-        api_key=AZURE_API_KEY,
-        azure_endpoint=AZURE_ENDPOINT,
-        temperature=0
+    print("\n Loading GPTEL LLM...")
+    llm = GPTELChatLLM(
+        api_key=GPTEL_KEY,
+        endpoint=GPTEL_ENDPOINT,
+        temperature=0.2
     )
 
     print(" Loading schema...")
