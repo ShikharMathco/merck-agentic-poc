@@ -22,7 +22,7 @@ EMBEDDING_FUNCTION: Any = None
 
 
 # ---------------------------
-# Simple context loader (for small folder of docs)
+# context loader 
 # ---------------------------
 def get_context_documents(folder_path: str) -> Dict[str, str]:
     """
@@ -104,7 +104,7 @@ def entity_retrieval(
 
 
 # ---------------------------
-# --- The original fuzzy pipeline (unchanged logic, refactored)
+# --- The fuzzy pipeline 
 # ---------------------------
 def _column_value(string: str) -> Tuple[Optional[str], Optional[str]]:
     if "=" in string:
